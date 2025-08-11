@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Italianno&family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
+    <link href="src/output.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Login Modal  -->
+    <div class="fixed top-0 left-0 right-0 bg-black opacity-95 w-screen h-screen flex items-center justify-center" id="modalLogin">
+        <div class="bg-pink-300 rounded-4xl shadow-md p-8 w-130 h-130 flex">
+            <div class="ml-19 ">
+                <a href="IndexLG.html">
+                <button class="absolute top-4 right-4 text-pink-500 cursor-pointer" id="closeModal" onclick="closeLogin()" >
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="cursor-pointer">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+                    </svg>
+                </button></a>
+                <h2 class="text-5xl text-center text-gray-700 mb-4" style="font-family: 'Italianno' , cursive; ">Login</h2>
+                
+                <form>
+                    <div class="mb-4">
+                        <label class="block text-gray-600 mb-1 text-2xl" for="email" style="font-family: 'Italianno' , cursive;">Email</label>
+                        <input type="email" id="email" class="bg-pink-100 border border-pink-100 rounded-lg p-2 w-full focus:outline-none focus:ring-2 focus:ring-pink-300" placeholder="Email">
+                    </div>
+                    <div class="mb-4">
+                        <label class="block text-gray-600 mb-1 text-2xl" for="password" style="font-family: 'Italianno' , cursive;">Password</label>
+                        <input type="password" id="password" class="bg-pink-100 border border-pink-100 rounded-lg p-2 w-full focus:outline-none focus:ring-2 focus:ring-pink-300" placeholder="Password">
+                    </div>
+                    <div class="flex items-center mb-4 space-x-5">
+                        <input type="checkbox" id="remember" class="mr-2">
+                        <label for="remember" class="text-gray-600 text-2xl" style="font-family: 'Italianno' , cursive;">Remember Password</label>
+                        <a href="#" class="text-pink-500 ml-auto text-2xl" style="font-family: 'Italianno' , cursive;">Forgot Password?</a>
+                    </div>  </form>
+                    <a href="Indexhome.html">
+                    <button type="submit" onclick="" class="bg-pink-500 text-white rounded-lg p-2 w-full text-3xl cursor-pointer" style="font-family: 'Italianno' , cursive;">Login</button>
+                    </a>
+              
+            
+                <div class="flex items-center my-2">
+                    <hr class="flex-grow border-gray-500">
+                    <span class="mx-2 text-gray-900">or</span>
+                    <hr class="flex-grow border-gray-500">
+                </div>
+        
+                <div class="flex justify-around">
+                    <button class=" w-20 p-2">
+                        <img src="https://cdn-icons-png.flaticon.com/128/10110/10110386.png" alt="Google">
+                    </button>
+                    <button class=" w-20 p-2">
+                        <img src="https://cdn-icons-png.flaticon.com/128/2175/2175370.png" alt="Apple">
+                    </button>
+                    <button class="w-20 p-2">
+                        <img src="https://cdn-icons-png.flaticon.com/128/2175/2175193.png" alt="Facebook">
+                    </button>
+                </div>
+        </div>
+    </div>
+    </div>
+</body>
+</html>

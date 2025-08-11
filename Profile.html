@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Italianno&family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
+    <link href="src/output.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+  <a href="indexhome.html" class="mr-10 text-2xl p-6">
+    <img src="https://cdn-icons-png.flaticon.com/128/2722/2722991.png" alt="" class="w-10 h-10 mr-4">
+    </a>
+<div class="flex items-center justify-center px-4 py-12">
+  <div class="bg-pink-300 rounded-3xl shadow-xl max-w-lg w-full p-5">
+    <h2 class="text-5xl font-semibold text-gray-900 mb-8 text-center" style="font-family: 'Italianno' , cursive;">Your Profile</h2>
+    <form class="space-y-6" id="profileForm" novalidate>
+      <div class="flex justify-center mb-6">
+        <div class="relative w-32 h-32 rounded-full overflow-hidden border-4 border-pink-600 cursor-default">
+          <img
+            src="https://i.pinimg.com/736x/31/c6/b9/31c6b9d3b6236ff61ffd8e0b2f934dc5.jpg"
+            alt="Profile Photo"
+            class="object-cover w-full h-full"
+            id="profileImage"
+            title="Profile photo"
+          />
+          <input type="file" accept="image/*" id="imageInput" class="absolute inset-0 w-full h-full opacity-0 cursor-pointer" disabled />
+        </div>
+      </div>
+      <div>
+        <label for="name" class="block text-gray-900 font-medium mb-2 text-4xl" style="font-family: 'Italianno' , cursive;">Name</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Your full name"
+          class="w-full px-4 py-3 border border-pink-600 rounded-md bg-pink-100 text-gray-900 cursor-not-allowed text-2xl" style="font-family: 'Italianno' , cursive;"
+          disabled
+          required
+        />
+        <p class="mt-1 text-sm text-red-600 hidden" id="nameError " style="font-family: 'Italianno' , cursive;">Please enter your name.</p>
+      </div>
+       <div>
+        <label for="email" class="block text-gray-900 font-medium mb-2 text-4xl" style="font-family: 'Italianno' , cursive;">Email</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="you@example.com"
+          class="w-full px-4 py-3 border border-pink-600 rounded-md bg-pink-100 text-gray-900 cursor-not-allowed text-2xl" style="font-family: 'Italianno' , cursive;"
+          disabled
+          required
+        />
+        <p class="mt-1 text-sm text-red-600 hidden" id="emailError"  style="font-family: 'Italianno' , cursive;">Please enter a valid email address.</p>
+      </div>
+      <div>
+        <label for="password" class="block text-gray-900 font-medium mb-2 text-4xl" style="font-family: 'Italianno' , cursive;">Password</label>
+        <input
+          type="password"
+          id="password"
+          name="password"
+          placeholder="••••••••"
+          class="w-full px-4 py-3 border border-pink-600 rounded-md bg-pink-100 text-gray-900 cursor-not-allowed text-2xl" style="font-family: 'Italianno' , cursive;"
+          disabled
+          minlength="6"
+          required
+        />
+        <p class="mt-1 text-sm text-red-600 hidden" id="passwordError" style="font-family: 'Italianno' , cursive;">Password must be at least 6 characters.</p>
+      </div>
+      <button
+        type="button"
+        id="editButton"
+        class="w-full bg-pink-600 hover:bg-pink-700 text-white py-3 rounded-md font-semibold transition text-3xl" style="font-family: 'Italianno' , cursive;"
+      style="font-family: 'Italianno' , cursive;">
+        Edit Profile
+      </button>
+      <a href="IndexLG.html">
+      <button
+        type="button"
+        id="logoutButton"
+        class="w-full bg-pink-800 hover:bg-pink-900 text-white py-3 rounded-md font-semibold transition mt-3 text-3xl" 
+      style="font-family: 'Italianno' , cursive;">
+        Log Out
+      </button>
+      </a>
+    </form>
+  </div>
+</div>
+<script src="Profile.js"></script>
+</body>
+</html>
