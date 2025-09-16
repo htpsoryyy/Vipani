@@ -3,127 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Italianno&family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
-    <link href="src/output.css" rel="stylesheet">
-    <title>Vipani Landing Page </title>
+    <title>Vipani - E-Commerce</title>
 </head>
-<body class="min-h-screen flex flex-col">
-
-  <!-- Header -->
-  <header class=" flex justify-between p-4 bg-pink-200 fixed top-0 left-0 right-0 z-10">
-        <img src="https://see.fontimg.com/api/rf5/1Gvo0/M2JkOTM3YjRkZjY0NDA5OThhZDcyODg1ZWUwNGMyYjAudHRm/VmlwYW5p/weddingday-personal-use-regular.png?r=fs&h=114&w=1000&fg=000000&bg=FFFFFF&tb=1&s=114" alt="" 
-        class="h-13 ml-5">
-        <nav class="flex space-x-4 items-center mr-175">
-        <a href="#products" class="text-gray-700 hover:text-pink-600 font-medium transition whitespace-nowrap">Products</a>
-        <a href="#features" class="text-gray-700 hover:text-pink-600 font-medium transition whitespace-nowrap">Features</a>
-        <a href="#contact" class="text-gray-700 hover:text-pink-600 font-medium transition whitespace-nowrap">Contact</a>
-      </nav> 
-      <div class="flex space-x-4">
-            <a href="Login.html" >
-            <button id="openLogin" onclick="openLogin()" class=" font-medium rounded-lg text-2xl px-6 py-2.5 text-center ml-100 bg-orange-50 text-pink-500 hover:bg-red-300 hover:text-red-900  " style="font-family: 'Italianno' , cursive;"" type="button">
-                Login
-            </button></a>
-            <a href="Register.html">
-            <button id="openRegister" onclick="openRegister()" class=" font-medium rounded-lg text-2xl px-5 py-2.5 text-center ml-100  bg-orange-50 text-pink-500 hover:bg-red-300 hover:text-red-900 " style="font-family: 'Italianno' , cursive;"" type="button">
-                Register
-            </button></a>
-         </div> 
-    </header>
-<br>
-<br>
-<br>
-  <!-- Hero Section -->
-  <section class="flex-grow flex flex-col md:flex-row items-center max-w-7xl mx-auto px-6 py-16 gap-10">
-    <div class="md:w-1/2 max-w-lg text-center md:text-left">
-      <h1 class="text-6xl md:text-7xl font-extrabold text-pink-600 mb-6" style="font-family:'Italianno', cursive">
-        Discover the Best Deals<br />in Online Shopping
-      </h1>
-      <p class="text-lg text-gray-700 mb-8">
-        Vipani brings you the most exclusive products with unbeatable prices.
-        Upgrade your shopping experience with fast deliveries and top-notch customer service.
-      </p>
-      <div class="flex justify-center md:justify-start gap-4">
-        <a href="#products" class="btn-primary">Shop Now</a>
-        <a href="#features" class="btn-secondary">Learn More</a>
-      </div>
-    </div>
-    <div class="md:w-1/2 max-w-lg">
-      <img src="https://i.pinimg.com/736x/f3/16/a6/f316a66ea6a30aca48e664565dd3b857.jpg" alt="Shopping deals hero" class="rounded-xl shadow-lg" />
-    </div>
-  </section>
-
-  <!-- Features Section -->
-  <section id="features" class="bg-purple-100 py-16">
-    <div class="container mx-auto px-6 max-w-7xl">
-      <h2 class="text-5xl font-bold text-center text-pink-600 mb-12" style="font-family:'Italianno', cursive">Why Shop with Us?</h2>
-      <div class="grid gap-10 sm:grid-cols-2 md:grid-cols-4">
-        <div class="text-center px-6">
-          <svg class="mx-auto mb-4 w-12 h-12 text-pink-600" fill="none" stroke="currentColor" stroke-width="1.7" viewBox="0 0 24 24" >
-            <path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3"></path>
-            <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.7"></circle>
-          </svg>
-          <h3 class="text-lg font-semibold mb-2">Fast &amp; Free Delivery</h3>
-          <p class="text-gray-600 text-sm">Get your orders delivered quickly at no extra cost.</p>
-        </div>
-        <div class="text-center px-6">
-          <svg class="mx-auto mb-4 w-12 h-12 text-pink-600" fill="none" stroke="currentColor" stroke-width="1.7" viewBox="0 0 24 24" >
-            <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 10h16M10 14h4"></path>
-            <rect x="4" y="18" width="16" height="4" rx="1" ry="1" stroke="currentColor" stroke-width="1.7"></rect>
-          </svg>
-          <h3 class="text-lg font-semibold mb-2">Quality Products</h3>
-          <p class="text-gray-600 text-sm">We only offer items from trusted brands and sellers.</p>
-        </div>
-        <div class="text-center px-6">
-          <svg class="mx-auto mb-4 w-12 h-12 text-pink-600" fill="none" stroke="currentColor" stroke-width="1.7" viewBox="0 0 24 24" >
-            <path stroke-linecap="round" stroke-linejoin="round" d="M7 8h10M7 12h6m2 8H7a2 2 0 01-2-2V6a2 2 0 012-2h6l6 6v8a2 2 0 01-2 2z"></path>
-          </svg>
-          <h3 class="text-lg font-semibold mb-2">Easy Returns</h3>
-          <p class="text-gray-600 text-sm">Hassle-free returns within 30 days for all products.</p>
-        </div>
-        <div class="text-center px-6">
-          <svg class="mx-auto mb-4 w-12 h-12 text-pink-600" fill="none" stroke="currentColor" stroke-width="1.7" viewBox="0 0 24 24" >
-            <path stroke-linecap="round" stroke-linejoin="round" d="M12 12v.01M17.657 16.657L19 18l-4 4-4-4 1.343-1.343m8-6.657a9 9 0 11-12.728 0"></path>
-          </svg>
-          <h3 class="text-lg font-semibold mb-2">24/7 Support</h3>
-          <p class="text-gray-600 text-sm">Our team is always here to help you with any questions.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Products Section -->
-  <section id="products" class="py-16">
-    <div class="container mx-auto px-6 max-w-7xl">
-      <h2 class="text-5xl font-bold text-center text-pink-600 mb-12" style="font-family:'Italianno', cursive">Featured Products</h2>
-      <a href="PilihanLp.html">
-      <div id="productGrid" class="grid gap-10 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
-        <!-- Products will load here -->
-      </div>
-      </a>
-    </div>
-  </section>
-
-
-<footer id="contact" class="z-25 w-full p-4 h-22 border-gray-200 shadow-sm md:flex md:items-center md:justify-between md:p-6 bg-pink-200">
-    <span class="text-large sm:text-centertext-black">© 2025 <a href="https://flowbite.com/" class="hover:underline" >Vipani</a>. All Rights Reserved.
-    </span>
-    <ul class="flex flex-wrap items-center mt-3 text-medium font-medium dark:text-black sm:mt-0">
-        <li>
-            <a href="#" class="hover:underline me-4 md:me-6">About</a>
-        </li>
-        <li>
-            <a href="#" class="hover:underline me-4 md:me-6">Privacy Policy</a>
-        </li>
-        <li>
-            <a href="#" class="hover:underline me-4 md:me-6">Licensing</a>
-        </li>
-        <li>
-            <a href="#" class="hover:underline">Contact</a>
-        </li>
-    </ul>
-</footer>
-<script src="IndexLG.js"></script>
+<body>
+    <h1>Welcome to Vipani</h1>
+    <p>Your e-commerce solution is loading...</p>
+    <script>
+        // Redirect to the main page after a moment
+        setTimeout(() => {
+            window.location.href = 'index-backup.html';
+        }, 2000);
+    </script>
 </body>
 </html>
